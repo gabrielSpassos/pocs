@@ -1,9 +1,11 @@
 name: Update TOC
 
-on:
-  push:
-    paths:
-      - 'auto-md-index-poc/**'
+on: [push]
+
+# on:
+#   push:
+#     paths:
+#       - 'auto-md-index-poc/**'
 
 permissions:
   contents: write
