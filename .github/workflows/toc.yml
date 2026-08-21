@@ -5,6 +5,9 @@ on:
     paths:
       - 'auto-md-index-poc/**'
 
+permissions:
+  contents: write
+
 jobs:
   toc:
     runs-on: ubuntu-latest
@@ -13,3 +16,4 @@ jobs:
       - uses: technote-space/toc-generator@v4
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TARGET_PATHS: 'auto-md-index-poc/README.md'
