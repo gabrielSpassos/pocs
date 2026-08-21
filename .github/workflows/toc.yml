@@ -1,0 +1,15 @@
+name: Update TOC
+
+on:
+  push:
+    paths:
+      - 'auto-md-index-poc/**'
+
+jobs:
+  toc:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: technote-space/toc-generator@v4
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
