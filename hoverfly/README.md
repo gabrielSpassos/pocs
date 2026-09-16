@@ -9,6 +9,7 @@
 * Simulate latency
 * Simulate random errors
 * Simulate rate limit
+* Written in GO
 
 ### Flavors
 
@@ -48,6 +49,10 @@ hoverctl logs
 ```bash
 hoverctl stop
 ```
+
+* Admin dashboard: http://localhost:8888/dashboard
+
+* [Hoverfly as a proxy server](proxy-server.md)
 
 * Install Via Docker
 
