@@ -34,10 +34,27 @@ hoverctl version
 hoverfly -version
 ```
 
-* Via Docker
+* Start hoverfly
+```bash
+hoverctl start
+```
+
+* Check hoverfly logs
+```bash
+hoverctl logs
+```
+
+* Stop hoverfly 
+```bash
+hoverctl stop
+```
+
+* Install Via Docker
 
 ```bash
 docker run -d -p 8888:8888 -p 8500:8500 spectolabs/hoverfly:latest
 ```
 
+//TODO
 * Configure the downloaded cli tool `hoverctl` to use the docker container
+
