@@ -54,6 +54,8 @@ hoverctl stop
 
 * [Hoverfly as a proxy server](proxy-server.md)
 
+* [Hoverfly as a web server](web-server.md)
+
 * Install Via Docker
 
 ```bash
