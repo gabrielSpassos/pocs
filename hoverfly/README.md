@@ -56,6 +56,8 @@ hoverctl stop
 
 * [Hoverfly as a web server](web-server.md)
 
+* [Hoverfly modes](modes.md)
+
 * Install Via Docker
 
 ```bash
