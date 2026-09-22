@@ -26,3 +26,13 @@
 
 - Will simulate the external API only if the request matches is found on simulate data
 - If does not found a match will forward the request to the real external API
+
+#### Synthesize Mode
+
+- Similar to simulate mode
+- Instead of reply with simulate data response, will use an user-supplied file
+- These files are named as "Middleware"
+- The middleware will generate the response "on the flight"
+- Usefull for simulate API that are hard to record the response at capture mode 
+
+![synthesize](assets/synthesize.mermaid.png)
