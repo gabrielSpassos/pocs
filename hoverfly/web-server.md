@@ -7,4 +7,4 @@
     * hoverfly is running in simulate mode as webserver at `http://localhost:8888`
     * to retrieve data from hoverfly is `http://localhost:8500/key/value`
 
-![web server](webserver.mermaid.webp)
+![web server](assets/webserver.mermaid.webp)

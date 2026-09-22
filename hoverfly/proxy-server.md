@@ -7,4 +7,4 @@
         * Headers: X-Forwarded-For, X-Real-IP, X-Forwarded-Proto
 * By default hoverfly starts as a proxy server
 
-![proxy](proxyserver.mermaid.webp)
+![proxy](assets/proxyserver.mermaid.webp)
