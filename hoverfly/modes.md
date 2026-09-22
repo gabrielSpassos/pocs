@@ -21,3 +21,8 @@
 - Simulation can be created by running the capture mode or manually
 
 ![simulate](assets/simulate.mermaid.png)
+
+#### Spy Mode
+
+- Will simulate the external API only if the request matches is found on simulate data
+- If does not found a match will forward the request to the real external API
