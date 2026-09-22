@@ -12,3 +12,12 @@
     - stateful mode can solve this issue
 
 ![capture](assets/capture.mermaid.webp)
+
+#### Simulate Mode
+
+- Uses the simulate data, to simulate the external API
+- When receive the request, instead of send the request to the external API will respond the client
+- No network traffic will reach the external API
+- Simulation can be created by running the capture mode or manually
+
+![simulate](assets/simulate.mermaid.png)
