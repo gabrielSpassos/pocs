@@ -47,3 +47,12 @@
 
 ![modify](assets/modify.mermaid.png)
 
+#### Diff Mode
+
+- Send the request to external service
+- Compare the response vs a stored simulation
+- Hoverfly detects differences between real response and the stored one
+- Hoverfly stores de difference, and foward the real response
+- Diff can be fetch via API `GET /api/v2/diff`
+- Diff is keep until Hoverfly is stopped or storage is cleaned
+    - to clean use API `DELETE /api/v2/diff`
