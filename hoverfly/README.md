@@ -58,6 +58,8 @@ hoverctl stop
 
 * [Hoverfly modes](modes.md)
 
+* [Simulations](simulations.md)
+
 * Install Via Docker
 
 ```bash
