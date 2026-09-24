@@ -78,3 +78,31 @@
     }
 }
 ```
+
+- Match any subdomain, can use the `glob matcher`
+```json
+"destination": [
+    {
+        "matcher": "glob",
+        "value": "*.hoverfly.io"
+    }
+]
+```
+
+- also can use more than one request matcher for each field
+    - This will match on any subdomain of `hoverfly.io` which begins with the letter `d`.
+        - docs.hoverfly.io MATCH
+        - dogs.hoverfly.io MATCH
+        - cats.hoverfly.io NOT MATCH
+```json
+"destination": [
+    {
+        "matcher": "glob",
+        "value": "*.hoverfly.io"
+    },
+    {
+        "matcher": "regex",
+        "value": "(\\Ad)"
+    }
+]
+```
