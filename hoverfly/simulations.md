@@ -6,3 +6,75 @@
 - Simulation JSON can be exported, edited, imported in and out Hoverfly
     - JSON must follow Hoverfly Simulation Schema
 - Simulations consist of `Request Matchers and Responses`, `Delays` and `Metadata` (“Meta”).
+
+### Request Responses Pairs
+
+- Hoverfly matches `incoming request` from client to `stored requests`
+- `stored requests` has association with `stored response` that will be returned to client if match is successful
+- The match logic can be configured via `Request Matchers`
+
+#### Request Matchers
+
+- When request is captured, a `Request Matcher` is created for each request field
+- Consist in: 
+    - request field name
+    - type of match to compare vs the incoming request
+    - request field value
+- There is many flavors of [type of match](https://docs.hoverfly.io/en/latest/pages/reference/hoverfly/request_matchers.html#request-matchers)
+- There is also two matching strategies `strongest match` (default) and `first match` (legacy)  
+    - [details](https://docs.hoverfly.io/en/latest/pages/keyconcepts/matching/matching.html#matching)
+- So the following request:
+
+|    Field    | Matcher Type | Value                                | 
+| ----------- | ------------ | -----                                |
+| scheme      |     exact    | “https”                              | 
+| method      |     exact    | “GET”                                |
+| destination |     exact    | “docs.hoverfly.io”                   | 
+| path        |     exact    | “/pages/keyconcepts/templates.html”  |
+| query       |     exact    | “query=true”                         |
+| body        |     exact    | “”                                   |
+| headers     |     exact    |                                      |
+
+- Is stored as:
+```json
+"request": {
+    "path": [
+        {
+            "matcher": "exact",
+            "value": "/pages/keyconcepts/templates.html"
+        }
+    ],
+    "method": [
+        {
+            "matcher": "exact",
+            "value": "GET"
+        }
+    ],
+    "destination": [
+        {
+            "matcher": "exact",
+            "value": "docs.hoverfly.io"
+        }
+    ],
+    "scheme": [
+        {
+            "matcher": "exact",
+            "value": "http"
+        }
+    ],
+    "body": [
+        {
+            "matcher": "exact",
+            "value": ""
+        }
+    ],
+    "query": {
+        "query": [
+            {
+            "matcher": "exact",
+            "value": "true"
+            }
+        ]
+    }
+}
+```
