@@ -106,3 +106,54 @@
     }
 ]
 ```
+
+#### Responses
+
+- Each Request Match Set has a response tied to it
+
+```json
+"response": {
+    "status": 200,
+    "body": "Response from docs.hoverfly.io/pages/keyconcepts/templates.html",
+    "encodedBody": false,
+    "headers": {
+        "Hoverfly": [
+            "Was-Here"
+        ]
+    },
+    "templated": false
+}
+```
+
+- Can use binary data encoded as base64
+
+```json
+"body": "YmFzZTY0IGVuY29kZWQ=",
+"encodedBody": true,
+```
+
+- Can use response from a file
+    - `-response-body-files-path` var so set where the file is, by default is the working directory
+    - when `body` and `bodyFile` are set, `body` takes precedence 
+
+```json
+"response": {
+  "status": 200,
+  "encodedBody": false,
+  "templated": false,
+  "bodyFile": "responses/200-success.json"
+}
+```
+
+- Can download the file too
+    - use this car to allow `-response-body-files-allow-origin`
+        - `hoverfly -response-body-files-allow-origin="https://raw.githubusercontent.com/"`
+
+```json
+"response": {
+  "status": 200,
+  "encodedBody": false,
+  "templated": false,
+  "bodyFile": "https://raw.githubusercontent.com/SpectoLabs/hoverfly/master/core/handlers/v2/schema.json"
+}
+```
