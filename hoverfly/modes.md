@@ -36,3 +36,14 @@
 - Usefull for simulate API that are hard to record the response at capture mode 
 
 ![synthesize](assets/synthesize.mermaid.png)
+
+#### Modify Mode
+
+- Similar to capture, but will NOT save request and response
+- Can't be used when is webserver, only as a proxy
+- Will pass each request to a "middleware" script before forward to external service
+- Will pass each response to a "middleware" script before forward to client
+- Can use these middleware to update something on request or response
+
+![modify](assets/modify.mermaid.png)
+
