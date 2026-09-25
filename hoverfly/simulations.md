@@ -163,3 +163,18 @@
 - Add latency do the captured responses
 - Can configure delay by URL pattern or HTTP methods
 - delay value in miliseconds
+
+### Meta
+
+- Metadata of the simulation
+- simulation version
+- Hoverfly version that exported the simulation
+- Date and time of the export
+
+```json
+"meta": {
+    "schemaVersion": "v5.2",
+    "hoverflyVersion": "v1.2.0",
+    "timeExported": "2020-04-25T17:56:32+03:00"
+}
+```
