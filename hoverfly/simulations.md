@@ -157,3 +157,9 @@
   "bodyFile": "https://raw.githubusercontent.com/SpectoLabs/hoverfly/master/core/handlers/v2/schema.json"
 }
 ```
+
+### Delays
+
+- Add latency do the captured responses
+- Can configure delay by URL pattern or HTTP methods
+- delay value in miliseconds
