@@ -19,6 +19,17 @@
 
 - Using github actions
 
+### Details
+
+* Use this to only push to subfolder trigger GA job
+
+```yml
+on:
+  push:
+    paths:
+      - 'auto-md-index-poc/**'
+```
+
 ## Output
 
 - https://github.com/gabrielSpassos/pocs/actions/runs/32484254275

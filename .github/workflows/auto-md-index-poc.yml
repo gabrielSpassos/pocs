@@ -1,17 +1,18 @@
-name: Update TOC
+name: Update Auto MD Index
 
-on: [push]
+# On any push to the repository, this workflow will run.
+# on: [push]
 
-# on:
-#   push:
-#     paths:
-#       - 'auto-md-index-poc/**'
+on:
+  push:
+    paths:
+      - 'auto-md-index-poc/**'
 
 permissions:
   contents: write
 
 jobs:
-  toc:
+  auto-md-index:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
