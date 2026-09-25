@@ -63,14 +63,6 @@ hoverctl stop
 
 * Admin dashboard: http://localhost:8888/dashboard
 
-* [Hoverfly as a proxy server](proxy-server.md)
-
-* [Hoverfly as a web server](web-server.md)
-
-* [Hoverfly modes](modes.md)
-
-* [Simulations](simulations.md)
-
 * Install Via Docker
 
 ```bash
@@ -80,3 +72,14 @@ docker run -d -p 8888:8888 -p 8500:8500 spectolabs/hoverfly:latest
 //TODO
 * Configure the downloaded cli tool `hoverctl` to use the docker container
 
+### Content
+
+#### [Hoverfly as a proxy server](proxy-server.md)
+
+#### [Hoverfly as a web server](web-server.md)
+
+#### [Hoverfly modes](modes.md)
+
+#### [Simulations](simulations.md)
+
+#### [Matching strategies](matching-strategies.md)
