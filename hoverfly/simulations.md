@@ -22,7 +22,7 @@
     - request field value
 - There is many flavors of [type of match](https://docs.hoverfly.io/en/latest/pages/reference/hoverfly/request_matchers.html#request-matchers)
 - There is also two matching strategies `strongest match` (default) and `first match` (legacy)  
-    - [details](https://docs.hoverfly.io/en/latest/pages/keyconcepts/matching/matching.html#matching)
+    - [matching strategies](matching-strategies.md)
 - So the following request:
 
 |    Field    | Matcher Type | Value                                | 
