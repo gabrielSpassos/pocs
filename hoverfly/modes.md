@@ -1,3 +1,17 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**
+
+- [Hoverfly Modes](#hoverfly-modes)
+    - [Capture Mode](#capture-mode)
+    - [Simulate Mode](#simulate-mode)
+    - [Spy Mode](#spy-mode)
+    - [Synthesize Mode](#synthesize-mode)
+    - [Modify Mode](#modify-mode)
+    - [Diff Mode](#diff-mode)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## Hoverfly Modes
 
 #### Capture Mode

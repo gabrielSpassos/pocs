@@ -1,3 +1,16 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**
+
+- [Hoverfly Simulations](#hoverfly-simulations)
+  - [Request Responses Pairs](#request-responses-pairs)
+    - [Request Matchers](#request-matchers)
+    - [Responses](#responses)
+  - [Delays](#delays)
+  - [Meta](#meta)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## Hoverfly Simulations
 
 - Core feature

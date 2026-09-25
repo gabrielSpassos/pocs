@@ -1,3 +1,14 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**
+
+- [Hoverfly](#hoverfly)
+    - [What is it?](#what-is-it)
+    - [Flavors](#flavors)
+    - [Local Install](#local-install)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Hoverfly
 
 > https://github.com/spectolabs/hoverfly
