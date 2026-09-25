@@ -3,6 +3,8 @@
 **Table of Contents**
 
 - [Matching Stategies](#matching-stategies)
+  - [Strongest Match](#strongest-match)
+  - [First Match](#first-match)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
