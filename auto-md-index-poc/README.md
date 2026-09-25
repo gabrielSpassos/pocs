@@ -5,6 +5,7 @@
 - [Auto Create Markdown Index POC](#auto-create-markdown-index-poc)
   - [Target](#target)
   - [Solution](#solution)
+    - [Details](#details)
   - [Output](#output)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
