@@ -6,6 +6,12 @@
     - [What is it?](#what-is-it)
     - [Flavors](#flavors)
     - [Local Install](#local-install)
+    - [Content](#content)
+      - [Hoverfly as a proxy server](#hoverfly-as-a-proxy-server)
+      - [Hoverfly as a web server](#hoverfly-as-a-web-server)
+      - [Hoverfly modes](#hoverfly-modes)
+      - [Simulations](#simulations)
+      - [Matching strategies](#matching-strategies)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
