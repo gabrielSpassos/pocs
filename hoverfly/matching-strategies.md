@@ -7,3 +7,13 @@
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## Matching Stategies
+
+* Two modes "strongest match" and "first match" 
+
+### Strongest Match
+
+* Default mode
+
+### First Match
+
+* Legacy mode
