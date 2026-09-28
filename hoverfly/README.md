@@ -13,6 +13,7 @@
       - [Simulations](#simulations)
       - [Matching strategies](#matching-strategies)
       - [Cache](#cache)
+      - [Templating](#templating)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

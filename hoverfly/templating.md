@@ -1,3 +1,13 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**
+
+- [Templating](#templating)
+  - [Data from a request](#data-from-a-request)
+  - [Helper methods](#helper-methods)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## Templating
 
 - Build responses dinamically
