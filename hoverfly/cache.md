@@ -1,3 +1,15 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**
+
+- [Cache](#cache)
+  - [Caching matches](#caching-matches)
+  - [Headers](#headers)
+  - [Eager caching](#eager-caching)
+  - [Cache invalidation](#cache-invalidation)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## Cache
 
 - In simulate mode, hoverfly use cache

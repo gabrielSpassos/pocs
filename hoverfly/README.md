@@ -12,6 +12,7 @@
       - [Hoverfly modes](#hoverfly-modes)
       - [Simulations](#simulations)
       - [Matching strategies](#matching-strategies)
+      - [Cache](#cache)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
