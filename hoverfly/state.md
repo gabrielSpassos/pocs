@@ -6,6 +6,7 @@
   - [Setting State when Performing a Match](#setting-state-when-performing-a-match)
   - [Requiring State in order to Match](#requiring-state-in-order-to-match)
   - [Managing state via Hoverctl](#managing-state-via-hoverctl)
+  - [Sequences](#sequences)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
