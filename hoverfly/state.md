@@ -43,3 +43,33 @@
 | payment-flow=pending,basket=full | payment-flow=complete      | Payment value transitions, basket deleted by key |
 | basket=full                      | payment-flow=complete      | Payment value created, basket deleted by key     |
 |                                  | payment-flow=complete      | Payment value created, basket already absent     |
+
+### Requiring State in order to Match
+
+- Can add a `requiresState` at the request
+
+```json
+"request": {
+    "path": [
+        {
+            "matcher": "exact",
+            "value": "/basket"
+        }
+    ]
+    "requiresState": {
+        "eggs": "present",
+        "bacon" : "large"
+    }
+},
+"response": {
+    "status": 200,
+    "body": "eggs and large bacon"
+}
+```
+
+| **Current State of Hoverfly** | **matches?** | **reason**                                         |
+| ----------------------------- | ------------ | -------------------------------------------------- |
+| eggs=present,bacon=large      | true         | Required and current state are equal               |
+| eggs=present,bacon=large,f=x  | true         | Additional state ‘f=x’ is not used by this matcher |
+| eggs=present                  | false        | Bacon is missing                                   |
+| eggs=present,bacon=small      | false        | Bacon is has the wrong value                       |
