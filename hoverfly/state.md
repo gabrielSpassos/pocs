@@ -87,3 +87,46 @@ $ hoverctl state get key
 $ hoverctl state set key value
 $ hoverctl state delete-all
 ```
+
+### Sequences
+
+- Using states, is possible to create a sequence of different response by same request
+- If prefix a state key with `sequence:` Hoverfly knows that the pair is a stateful sequence
+- Hoverfly will keep track of the user’s position in the sequence and move them forwards.
+- Once Hoverfly has reached the end of the sequence, it will to return the final response.
+
+```json
+{
+  "data": {
+    "pairs": [{
+        "request": {
+          "requiresState": {
+            "sequence:1": "1"
+          }
+        },
+        "response": {
+          "status": 200,
+          "body": "First response",
+          "transitionsState": {
+            "sequence:1": "2"
+          }
+        }
+      },
+      {
+        "request": {
+          "requiresState": {
+            "sequence:1": "2"
+          }
+        },
+        "response": {
+          "status": 200,
+          "body": "Second response"
+        }
+      }
+    ]
+  },
+  "meta": {
+    "schemaVersion": "v5.2"
+  }
+}
+```
