@@ -73,3 +73,15 @@
 | eggs=present,bacon=large,f=x  | true         | Additional state ‘f=x’ is not used by this matcher |
 | eggs=present                  | false        | Bacon is missing                                   |
 | eggs=present,bacon=small      | false        | Bacon is has the wrong value                       |
+
+### Managing state via Hoverctl
+
+- Can get or set the state via cli 
+
+```bash
+$ hoverctl state --help
+$ hoverctl state get-all
+$ hoverctl state get key
+$ hoverctl state set key value
+$ hoverctl state delete-all
+```
