@@ -3,6 +3,7 @@
 **Table of Contents**
 
 - [State](#state)
+  - [Setting State when Performing a Match](#setting-state-when-performing-a-match)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
