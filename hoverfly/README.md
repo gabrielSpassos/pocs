@@ -14,6 +14,7 @@
       - [Matching strategies](#matching-strategies)
       - [Cache](#cache)
       - [Templating](#templating)
+      - [State](#state)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
