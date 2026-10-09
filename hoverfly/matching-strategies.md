@@ -22,6 +22,7 @@
 
 * Each request matcher counts as points
 * The Request Responses Pairs that was more points is the one that the response will return
+* ![0](assets/request-matcher/request.png)
 * ![1](assets/request-matcher/request-matcher1.png)
     * destination match
     * method does not match
